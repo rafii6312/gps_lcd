@@ -102,7 +102,7 @@ static bool feedgps()
 String toString(float f, String pre)
 {
   char tmp[16];
-  dtostrf(f,1,4,tmp);
+  dtostrf(f,1,8,tmp);
   String strOut = pre + tmp;
   return strOut;
 }
